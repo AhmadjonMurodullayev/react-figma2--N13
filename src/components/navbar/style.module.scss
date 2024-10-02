@@ -1,0 +1,44 @@
+.navbar {
+  background-color: #0e2149;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_box {
+    display: flex;
+    gap: 30px;
+  }
+  &_sorch {
+    display: flex;
+    align-items: center;
+    background-color: #253b6a;
+  }
+  &_input {
+    padding: 10px;
+    background-color: inherit;
+    border: none;
+    color: white;
+    &::placeholder {
+      color: white;
+    }
+  }
+  &_title {
+    color: white;
+  }
+  &_bar{
+    display: none;
+  }
+  }
+  
+@media(max-width:768px){
+  .navbar_box{
+    display: none;
+  }
+  .navbar_bar{
+    display: block;
+  }
+}
