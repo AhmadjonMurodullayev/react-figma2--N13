@@ -1,3 +1,7 @@
+.container{
+  width: 90%;
+  margin: auto;
+}
 .card-grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
@@ -5,7 +9,6 @@
     padding: 20px;
   }
   
-  /* General card styling */
   .card {
     position: relative;
     padding: 20px;

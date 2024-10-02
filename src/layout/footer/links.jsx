@@ -1,9 +1,12 @@
 import React from "react";
+import styles from "./style.module.scss";
+
 import ts from "../../assets/ts.svg";
 
 function Links() {
   return (
-    <div className="container mx-auto px-4">
+ <div className={styles.container}>
+       <div className=" mx-auto px-4">
       <div className="flex flex-col lg:flex-row justify-between my-5">
         <div className="flex flex-col gap-2">
           <h3 className="text-black font-bold text-[19px]">Продукция</h3>
@@ -36,6 +39,7 @@ function Links() {
         <p className="text-center md:text-right">Разработка и продвижение сайта — SEOabsolut</p>
       </div>
     </div>
+ </div>
   );
 }
 

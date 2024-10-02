@@ -5,7 +5,7 @@ import footer from "../../assets/footerlogo.png";
 export const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.footer_box}>
           <div className={styles.footer_text}>
             <h1 className={styles.footer_title}>Есть вопросы?</h1>

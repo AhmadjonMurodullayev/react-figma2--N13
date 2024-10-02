@@ -6,7 +6,7 @@ import style from './style.module.scss'
 export const Header = ({data}) => {
   return (
 <>
-<div className="container">
+<div className={style.container}>
       <header className={style.header}>
         <div className={style.header_logo}>
             <img src={data.logo} alt="" />

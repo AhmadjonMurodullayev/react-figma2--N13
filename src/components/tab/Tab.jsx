@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../data/data';
+import style from '../navbar/style.module.scss'
 export const Tab = () => {
   const [activeTab, setActiveTab] = React.useState(1); 
 
@@ -7,7 +8,8 @@ export const Tab = () => {
     activeTab === 1 ? data.tabs.tab2 : activeTab === 2 ? data.tabs.tab1 : data.tabs.tab3;
 
   return (
-    <div className="container mx-auto p-6">
+ <div className={style.container}>
+     <div className=" mx-auto p-6">
       <div className="flex justify-center space-x-4 mb-6">
         <button
           onClick={() => setActiveTab(1)}
@@ -54,5 +56,6 @@ export const Tab = () => {
         ))}
       </div>
     </div>
+ </div>
   );
 };
